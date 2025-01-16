@@ -6,9 +6,31 @@ body {
     margin-bottom: 100vh;
 }
 
+section {
+    background-color: #666;
+
+    min-height: 100vh;
+    margin-bottom: 100px;
+}
+
+header {
+    background-color: lightgreen;
+    padding: 40px;
+}
+main {
+    background-color: lightseagreen;
+}
+footer {
+    background-color: lightcoral;
+}
+
 .container {
     background: salmon;
     margin-bottom: 40px;
+}
+
+.tall {
+    height: 600px;
 }
 
 .box {
@@ -22,6 +44,10 @@ body {
     width: 75px;
     height: 75px;
     background: crimson;
+}
+
+.no-width {
+    width: auto;
 }
 
 
@@ -39,6 +65,10 @@ img {
     /* float: left; */
     float:right;
 }
+
+
+
+/* Flex properties */
 
 .flex {
     display: flex;
@@ -101,4 +131,68 @@ img {
 
 .gap {
     gap: 10px;
+}
+
+
+
+
+/* Grid properties */
+
+.grid {
+    display: grid;
+}
+
+.two-col {
+    grid-template-columns: 150px 400px;
+}
+
+.six-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.two-third-col {
+    grid-template-columns: 2fr 1fr;
+}
+
+.sidebar {
+    grid-template-columns: 200px 1fr;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-end {
+    align-content: end;
+}
+
+/* Grid layouts */
+
+.basic-stacked-layout {
+    grid-template-rows: 150px 1fr 80px;
+}
+
+.sidebar-layout {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 300px 1fr;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.sidebar-layout-areas {
+    grid-template: auto 1fr auto / 300px 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header-area {
+    grid-area: header;
+}
+
+.footer-area {
+    grid-area: footer;
 }

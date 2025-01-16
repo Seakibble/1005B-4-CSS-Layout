@@ -9,201 +9,314 @@
     <title>Class 4 - CSS Layout</title>
 </head>
 <body>
-    <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+    <section>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <!-- Width and height don't apply on inline elements -->
-    <div class="container">
-        <div class="box inline">fgdsg</div>
-        <div class="box inline">gfsd</div>
-        <div class="box inline">gfd</div>
-        <div class="box inline">fgfs</div>
-    </div>
+        <!-- Width and height don't apply on inline elements -->
+        <div class="container">
+            <div class="box inline">fgdsg</div>
+            <div class="box inline">gfsd</div>
+            <div class="box inline">gfd</div>
+            <div class="box inline">fgfs</div>
+        </div>
 
-    <!-- display-inline, stacks horizontally like inline, but can be sized like block -->
-    <div class="container">
-        <div class="box inline-block"></div>
-        <div class="box inline-block"></div>
-        <div class="box inline-block"></div>
-        <div class="box inline-block"></div>
-    </div>
+        <!-- display-inline, stacks horizontally like inline, but can be sized like block -->
+        <div class="container">
+            <div class="box inline-block"></div>
+            <div class="box inline-block"></div>
+            <div class="box inline-block"></div>
+            <div class="box inline-block"></div>
+        </div>
 
-    <!-- Float -->
-    <div class="container">
-        <img src="images/penquin.jpg" alt="Penguin family" width="300px">
-        <!-- <img src="images/penquin.jpg" alt="Penguin family" width="300px"> -->
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nesciunt magni numquam aspernatur minima eveniet quae unde accusamus aliquid est id reprehenderit aliquam porro corporis eligendi deleniti, explicabo, quod fugit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nesciunt magni numquam aspernatur minima eveniet quae unde accusamus aliquid est id reprehenderit aliquam porro corporis eligendi deleniti, explicabo, quod fugit?</p>        
-    </div>
+        <!-- Float -->
+        <div class="container">
+            <img src="images/penquin.jpg" alt="Penguin family" width="300px">
+            <!-- <img src="images/penquin.jpg" alt="Penguin family" width="300px"> -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nesciunt magni numquam aspernatur minima eveniet quae unde accusamus aliquid est id reprehenderit aliquam porro corporis eligendi deleniti, explicabo, quod fugit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nesciunt magni numquam aspernatur minima eveniet quae unde accusamus aliquid est id reprehenderit aliquam porro corporis eligendi deleniti, explicabo, quod fugit?</p>        
+        </div>
 
-    <h2>Flex</h2>
-    <div class="container flex gap">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+        <h2>Flex</h2>
+        <div class="container flex gap">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container flex justify-content-end">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+        <div class="container flex justify-content-end">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container flex justify-content-center">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+        <div class="container flex justify-content-center">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container flex justify-content-space-between">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+        <div class="container flex justify-content-space-between">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container flex justify-content-space-around">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+        <div class="container flex justify-content-space-around">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container flex align-items-end">
-        <div class="box"></div>
-        <div class="box big"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+        <div class="container flex align-items-end">
+            <div class="box"></div>
+            <div class="box big"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container flex align-items-center">
-        <div class="box"></div>
-        <div class="box big"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-    
-
-
-
-    <div class="container flex-column flex">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-
-    <div class="container flex-column flex align-items-end">
-        <div class="box"></div>
-        <div class="box big"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-
-    <div class="container flex-column flex align-items-center">
-        <div class="box"></div>
-        <div class="box big"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-
-
-    <div class="container flex">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="container flex align-items-center">
+            <div class="box"></div>
+            <div class="box big"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
         
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
 
-    <div class="container flex wrap">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
 
-    <div class="container flex wrap">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        
-        <div class="box grow"></div>
-        <div class="box grow"></div>
-    </div>
 
-    <div class="container flex">
-        <div class="box no-shrink"></div>
-        <div class="box"></div>
-        <div class="box no-shrink"></div>
-        <div class="box"></div>
-        
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        
-        <div class="box grow"></div>
-        <div class="box grow"></div>
-    </div>
+        <div class="container flex-column flex">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    
-    <div class="container flex">
-        <div class="box no-shrink"></div>
-        <div class="box"></div>
-        <div class="box basis no-shrink"></div>
-        <div class="box"></div>
-        
-        <div class="box"></div>
-        <div class="box basis half-shrink"></div>
-        <div class="box basis"></div>
-        <div class="box basis"></div>
-        
-        <div class="box grow"></div>
-        <div class="box grow"></div>
-    </div>
+        <div class="container flex-column flex align-items-end">
+            <div class="box"></div>
+            <div class="box big"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container flex">
-        <div class="box full-spring"></div>
-        <div class="box full-spring"></div>
-        <div class="box full-spring"></div>
-        <div class="box full-spring"></div>
-        
-        <div class="box full-spring"></div>
-        <div class="box full-spring"></div>
-        <div class="box full-spring"></div>
-        <div class="box full-spring"></div>
-        
-        <div class="box full-spring"></div>
-        <div class="box full-spring"></div>
-    </div>
+        <div class="container flex-column flex align-items-center">
+            <div class="box"></div>
+            <div class="box big"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
+
+        <div class="container flex">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <div class="container flex wrap">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <div class="container flex wrap">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            <div class="box grow"></div>
+            <div class="box grow"></div>
+        </div>
+
+        <div class="container flex">
+            <div class="box no-shrink"></div>
+            <div class="box"></div>
+            <div class="box no-shrink"></div>
+            <div class="box"></div>
+            
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            <div class="box grow"></div>
+            <div class="box grow"></div>
+        </div>
+
+        
+        <div class="container flex">
+            <div class="box no-shrink"></div>
+            <div class="box"></div>
+            <div class="box basis no-shrink"></div>
+            <div class="box"></div>
+            
+            <div class="box"></div>
+            <div class="box basis half-shrink"></div>
+            <div class="box basis"></div>
+            <div class="box basis"></div>
+            
+            <div class="box grow"></div>
+            <div class="box grow"></div>
+        </div>
+
+        <div class="container flex">
+            <div class="box full-spring"></div>
+            <div class="box full-spring"></div>
+            <div class="box full-spring"></div>
+            <div class="box full-spring"></div>
+            
+            <div class="box full-spring"></div>
+            <div class="box full-spring"></div>
+            <div class="box full-spring"></div>
+            <div class="box full-spring"></div>
+            
+            <div class="box full-spring"></div>
+            <div class="box full-spring"></div>
+        </div>
+
+        <h2>Grid</h2>
+        
+        <div class="container grid two-col">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container grid six-col">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container grid two-third-col">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+        
+        <div class="container grid sidebar">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container grid sidebar gap">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container grid two-col justify-content-center">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container tall grid two-col justify-content-center">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container tall grid two-col justify-content-center align-items-center">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container tall grid two-col justify-content-center align-content-center">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+
+        <div class="container tall grid two-col justify-content-center align-content-end">
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+            <div class="box no-width"></div>
+        </div>
+    </section>
+    <h1>Grid Layouts</h1>
+    <section class="grid basic-stacked-layout">
+        <header>Header</header>
+        <main>Main</main>
+        <footer>Footer</footer>
+    </section>
+
+    <section class="grid sidebar-layout">
+        <header class="span-2">Header</header>
+        <div>Sidebar</div>
+        <main>Main</main>
+        <footer class="span-2">Footer</footer>
+    </section>
+
+    <section class="grid sidebar-layout-areas">
+        <header class="header-area">Header</header>
+        <div>Sidebar</div>
+        <main>Main</main>
+        <footer class="footer-area">Footer</footer>
+    </section>
 </body>
 </html>
