@@ -1,0 +1,104 @@
+body {
+    background-color: #ddd;
+
+    font-size: 28px;
+
+    margin-bottom: 100vh;
+}
+
+.container {
+    background: salmon;
+    margin-bottom: 40px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border: 10px solid black;
+}
+
+.big {
+    width: 75px;
+    height: 75px;
+    background: crimson;
+}
+
+
+
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+img {
+    /* float: left; */
+    float:right;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.grow {
+    flex-grow: 1;
+    background-color: blueviolet;
+}
+.no-shrink {
+    flex-shrink: 0;
+    background-color: teal;
+}
+
+.half-shrink {
+    flex-shrink: 0.5;
+    background-color: cyan;
+}
+
+.basis {
+    flex-basis: 100px;
+}
+
+.full-spring {
+    flex: 0 1 10px
+}
+
+.gap {
+    gap: 10px;
+}
